@@ -18,12 +18,17 @@
 + blue
 
 - red
+- green
+- blue
+
+
+- red
 
 - green
 
 - blue
 
-i'm not sure why that last one looks is indented.
+i'm not sure why that last one looks indented.
 
 and here's an ordered list.
 
@@ -34,3 +39,11 @@ and here's an ordered list.
 
 since i started with 9, it used that as the starting-value.
 i didn't know it would do that; i thought the numbers were immaterial.
+
+so let's try starting with 3.
+
+3. magic
+14. kareem
+22. jerry
+69. wilt
+
