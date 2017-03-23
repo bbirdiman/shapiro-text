@@ -6,6 +6,10 @@
  
  in it, i created this file, named "phil.md".
  
+ after saving it, i clicked the "raw" button to get the u.r.l., which is:
+ 
+ https://raw.githubusercontent.com/bbirdiman/shapiro-text/master/phil.md
+ 
  the ".md" extension means that github knows it's a markdown file,
  and will display it formatted.
  
