@@ -1,5 +1,7 @@
  ## and here's github!
  
+ #### github offers free storage as well.
+ 
  i created a repository called "shapiro-text".
  
  in it, i created this file, named "phil.md".
