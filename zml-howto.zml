@@ -1,0 +1,1003 @@
+ z.m.l. how-to
+
+
+ by bowerbird intelligentleman
+
+ http://zenmagiclove.com/simple/byond.html
+
+ http://jaguarps.com/jagps-halftitle.jpg
+
+
+
+
+
+
+ ## table of contents
+
+
+autotoc
+
+ http://jaguarps.com/jagps-halftitle.jpg
+
+
+
+
+
+ ## chapter 1 -- philosophy of z.m.l.
+
+
+in a nutshell, this is the philosophy of z.m.l.
+
+ * a light-markup format for long-form text
+ * simple enough for a 4th-grader to grok it
+ * deploying to the full set of output formats
+ * geared equally for readers, writers, coders
+ * powerful range of state-of-the-art features
+ * including change-tracking/version-control
+ * complete variety of simple, powerful apps
+ * tools that run well on every major platform
+ * interactive instruction apps to teach deeply
+ * no bugs, no ambiguities, no inconsistencies
+ * fleet-of-feet on greeting new opportunities
+ * good responsiveness to an active user-base
+ * supremely flexible for private customizing
+ * resistance to public forks and "extensions"
+ * no technical debt to others, e.g., markdown
+ * dedicated to improving the ability to re-mix
+ * guaranteeing clear access to structured text
+ * built to facilitate new vibrant cyber-libraries
+ * leaving the past, and moving into our future
+
+
+
+
+
+ ## chapter 2 -- paragraphs
+
+
+you use a blank line between paragraphs.
+
+in fact, you use a blank line to separate
+_everything,_ such as paragraphs, headers,
+blockquotes, lists, code-blocks, and all of
+the other types of elements in a document.
+
+each set of consecutive non-blank lines is
+called a "chunk"; thus all of those various
+elements are called "chunks", so the rule is
+that each chunk is bounded by blank lines.
+
+
+
+
+
+ ## chapter 3 -- headers
+
+
+use headers to separate sections, chapters,
+parts, books, in whatever way makes sense.
+
+a header must be preceded by 5 (or more)
+blank lines, and followed by 2 blank lines.
+
+a header can also have a subheader, which
+must be separated by a blank line, meaning
+the 2 blank lines will follow the subheader.
+
+you can use the "#" convention for headers,
+one for each level of the header. so, e.g.,
+a header starting with " ## " is an h2 header.
+
+the first line in your file is automatically
+recognized as the title, and assigned h1.
+even if it is not explictly marked with "#".
+
+however, you _can_ mark it, if you prefer.
+
+but do not use a one-# header elsewhere.
+(indeed, if you do so, that chunk will be
+considered and shown as a numbered-list.)
+
+
+
+
+
+ ## chapter 4 -- alignment
+
+
+you need to be able to do other kinds of alignment too.
+
+ centered
+
+  o diva (left)
+
+   o diva (centered)
+
+    o diva (right)
+
+
+
+
+
+ ## chapter 5 -- epigraphs and epitaphs
+
+
+    _"there's_ _an_ _app_ _for_ _that."_
+    -- apple commercial slogan.
+
+you need to be able to format epigraphs and epitaphs.
+
+most typically they are right-justified, so you'll merely
+use the right-justification formatting you just learned.
+
+
+
+
+
+ ## chapter 6 -- internal links
+
+
+internal links need to be formulated automatically,
+plus you need to be able to specify them manually.
+
+
+
+
+
+ ## chapter 7 -- external links
+
+
+just type in the u.r.l., and voila.
+
+ http://jaguarps.com/index.html
+
+yes, that means you can't "hide" a u.r.l. inside text.
+
+what with shorteners and all that, there is far too
+much funny-business going on with basic _links,_
+which are the lifeblood of the web. just cut it out.
+
+show the darn link so everybody knows what it is.
+
+
+
+
+
+ ## chapter 8 -- images
+
+
+just type in the u.r.l. of the graphic. voila.
+
+ http://zenmagiclove.com/zml/suite/suite.jpg
+
+
+
+
+
+ ## chapter 9 -- cover/title
+
+
+the first section in your document is
+considered to be "the cover/title page".
+
+the first chunk is considered the title.
+
+and the subtitle is the second chunk;
+if you have a subtitle, that is.
+
+the author is listed next, in a chunk
+which you're advised to start with "by".
+
+everything else which is important enough
+to go on the title page should be included,
+such as your e-mail address, the u.r.l. of
+the canonical copy of the document, and
+the "cover page image" for the document.
+
+and anything else that is also "important".
+
+but be brief. you can shuttle the rest to
+a "for more information" section at the end.
+
+
+
+
+
+ ## chapter 10 -- contents page
+
+
+the second section in your document
+_must_ be the table of contents, because
+we want users to know exactly where it is,
+right up at the top, where it is easy to find.
+
+you can create it manually if you want to.
+
+or you can just type "autotoc" and it will
+be generated for you automatically. rad.
+
+
+
+
+
+ ## chapter 11 -- styling
+
+
+get it straight. use the underscore character
+for _italics,_ and the asterisk character for *bold.*
+
+this will be _italics_ and this will be *bold.*
+
+this is shown as `code` and this will also be ~code.~
+
+_every_ _word_ _of_ _a_ _phrase_ must be marked.
+and yes, you can use intra-_fucking_-word italics.
+
+and yes, underscores in a u.r.l. will be left untouched,
+and so will asterisks, and so will tildes and backticks.
+
+
+
+
+
+ ## chapter 12 -- blockquotes
+
+
+use the ">" character for blockquotes.
+
+ > oh, and don't be putting headers in your blockquotes.
+ > what kind of sense does that make? just stop it.
+
+you can also use the ":" character for blockquotes,
+in which case your linebreaks will be preserved.
+
+ : line 1 of a blockquote
+ : line 2 of a blockquote
+ : line 3 of a blockquote
+ : line 4 of a blockquote
+ : line 5 of a blockquote
+ : line 6 of a blockquote
+ : line 7 of a blockquote
+
+
+
+
+
+ ## chapter 13 -- lists
+
+
+you can have either "ordered" lists or unordered lists.
+
+an "ordered" list is numbered, so you remember that
+you get it by using a "#" character as your z.m.l. tag.
+
+ # one
+ # two two
+ # three three three
+ # four four four four
+ # five five five five five
+
+you can use a number of characters which will give you
+an unordered list; they differ in the bullets they use.
+
+ * use an asterisk to get a regular bullet
+
+ o use a lowercase "o" to get an open bullet
+
+ = use an equals-sign to get a square bullet
+
+ x use an x to get an unordered list that has no bullets
+
+those are 4 different one-item lists up above there, as they
+were separated into 4 chunks by the blank lines in between,
+but you can even use different bullets within the same list.
+
+ * use an asterisk to get a regular bullet
+ o use a lowercase "o" to get an open bullet
+ = use an equals-sign to get a square bullet
+
+not sure why you'd want to do that, but you _can._
+
+if you need to nest a list within another list, use "+".
+
+ = use an equals-sign to get a regular indent.
+ + use a plus-sign to get a nested indent.
+
+ = major league baseball
+ + national league
+ + american league
+
+if you need to nest a list in another in another, use "-".
+
+ = use an equals-sign for a regular indent.
+ + use a plus-sign to get a nested indent.
+ - a minus-sign gives double-nested indent.
+
+here's an example:
+
+ = far west
+ + alaska
+ - fairbanks
+ - juneau
+ + california
+ - arcata
+ - eureka
+ - long beach
+ - los angeles
+ - san diego
+ - san francisco
+ - sacramento
+ + hawaii
+ - honolulu
+ + nevada
+ - carson city
+ - ely
+ - gerlach
+ - las vegas
+ - reno
+ + oregon
+ - portland
+ - salem
+ + washington
+ - olympia
+ - pullman
+ - seattle
+ - spokane
+
+ = great plains
+ + kansas
+ + nebraska
+ + north dakota
+ + oklahoma
+ + south dakota
+
+ = mid-atlantic
+ + delaware
+ + maryland
+ + new jersey
+ + new york
+ + pennsylvania
+
+ = midwest
+ + illinois
+ + indiana
+ + iowa
+ + kentucky
+ + michigan
+ + minnesota
+ + missouri
+ + ohio
+ + west virginia
+ + wisconsin
+
+ = mountains
+ + colorado
+ + idaho
+ + montana
+ - butte
+ - helena
+ + utah
+ + wyoming
+
+ = new england
+ + connecticut
+ + maine
+ + massachusetts
+ + new hampshire
+ + rhode island
+ + vermont
+
+ = south
+ + alabama
+ + arkansas
+ + florida
+ + georgia
+ + louisiana
+ + mississippi
+ + north carolina
+ + south carolina
+ + tennessee
+ + virginia
+
+ = southwest
+ + arizona
+ + new mexico
+ + texas
+
+
+
+
+
+ ## chapter 14 -- code
+
+
+use a backtick or a tilde.
+
+ ` this entire paragraph (1)
+ ` will be treated as code.
+
+ ` this entire paragraph (2)
+will be treated as code.
+
+ ` this entire paragraph (3)
+will be treated as code.
+so _italics_ and *bold* will not be converted.
+
+ ` // javascript
+//this entire paragraph (4)
+//will be treated as code.
+
+ ~ this entire chunk (5)
+will be treated
+as code. so _italics_ and *bold*
+will not be converted.
+
+ ~ this entire chunk (6) will
+be treated as code.
+
+ ~ this entire chunk (7) will
+ ~ be treated as code.
+
+a blank line terminates the chunk,
+so if your code contains blank lines,
+turn them into empty comment-lines.
+
+ ` // javascript
+var s="this entire paragraph (8)"
+var t="will be treated as code."
+//
+var u="see what i did there?"
+var v="i retained the unity of"
+var w="the chunk by turning"
+var x="the blank line into"
+var y="a non-blank line --"
+var z="an empty comment."
+
+ ~ // javascript
+            var s="it's fine to indent your code"
+                     var t="even to vary your indent"
+ var u="indents don't even have to make sense"
+
+
+
+
+
+ ## chapter 15 -- untreated raw chunks
+
+
+if there is a chunk that you want to leave "raw" --
+i.e., untreated by the z.m.l. conversion routine
+-- mark it as code, and it will be left untouched,
+which is why the tags in the following chunk will
+_not_ activate elements, as they would otherwise.
+
+ ~ # space/hash/space -- tag for a numbered list
+ * space/asterisk/space -- unordered list (disc bullet)
+ o space/lower-case-o/space -- unordered list (circle)
+ = space/equals/space -- unordered list (square)
+ + space/plus/space -- unordered list (1-level-indent)
+ - space/minus/space -- unordered list (double-indent)
+ ~ ~ space/tilde/space -- tag for a code-block
+ ` space/left-quote/space -- tag for a code-block
+ > space/greater-than/space -- blockquote with breaks
+ : space/colon/space -- blockquote, eat the linebreaks
+ | space/or-bar/space -- tag for a table
+
+ one space at left = centered
+
+  two spaces at left = left-justified
+
+   three spaces at left = centered
+
+    four spaces at left = right-justified
+
+      six spaces (or more) at left = poetry
+            six spaces (or more) at left = poetry
+
+here's how you create a footnote.[referent]
+
+[referent] a left-bracket in column 1 indicates a footnote,
+providing it was summoned earlier by a matching referent.
+
+1. a number-period-space
+combination
+in columns 1-3
+gives
+a nice-looking
+numbered
+outdented
+paragraph.
+
+2. the
+number-period-space
+tag gives you
+a way
+to present
+longer
+paragraphs
+set out
+at the
+margin,
+nicer-loooking
+than a
+numbered list.
+it's
+another
+option
+for the look
+you want.
+
+
+
+
+
+ ## chapter 16 -- poetry
+
+
+poems will often have a varying indent on lines.
+you obtain this effect by starting each line with
+at least six spaces, and more for a larger indent.
+
+      six spaces at the start of this line
+            12 spaces at the start of this line
+      six spaces at the start of this line
+            12 spaces at the start of this line
+
+            12 spaces at the start of this line
+                        24 spaces at the start of this line
+            12 spaces at the start of this line
+                        24 spaces at the start of this line
+
+you can even get downwight fweaky!
+
+      six spaces at the start of this line
+          ten spaces at the start of this line
+              14 spaces at the start of this line
+                  18 spaces at the start of this line
+                      22 spaces at the start of this line
+                      22 spaces here too
+                  18 spaces at the start of this line
+              14 spaces at the start of this line
+          ten spaces at the start of this line
+      six spaces at the start of this line
+
+
+
+
+
+ ## chapter 17 -- tables
+
+
+we need to be able to do tables.
+
+ | this is a "table" with one column
+
+or, if we want something that's more like
+a real honest-to-goodness table, try this:
+
+ | this lone line looks like a table header
+
+ | row value | col 1 head | col 2 head
+ | monday | 11am | 9pm
+ | tuesday | 9am | 9pm
+ | wednesday | 9am | 9pm
+ | thursday | 9am | 11pm
+ | friday | 11am | 6pm
+
+so here's a table with our block tags:
+
+ | tag character | html | comments
+ | > | blockquote | wrap lines
+ | : | blockquote | no wrap lines
+ | * | unordered list | disc bullet
+ | o | unordered list | circle bullet
+ | = | unordered list | square bullet
+ | + | unordered list | 2-level indent
+ | - | unordered list | 3-level indent
+ | x | unordered list | no bullet
+ | # | numbered ordered list | standard html
+ | ~ | code-block | comment 1
+ | ` | code-block | comment 1
+ | or-bar | table | solid borders
+ | ^ | table | no borders
+ | ! | poetry | varying indents
+ | ; | definition | must be accompanied
+ | . | filler line | (period by itself)
+
+  remember that the full
+  format of the block-tag is:
+  [space][tag][space]
+  at the start of the chunk.
+
+as long as you stay simple, you can go big:
+
+ | major league baseball final standings 2014
+
+ | _national_ _league_
+
+ | _n.l. west_ | w | l | pct | gb | home | away | l10 | strk
+ | dodgers | 94 | 68 | .580 | - | 45-36 | 49-32 | 8-2 | w5
+ | giants | 88 | 74 | .543 | 6.0 | 45-36 | 43-38 | 4-6 | w2
+ | padres | 77 | 85 | .475 | 17.0 | 48-33 | 29-52 | 6-4 | l2
+ | rockies | 66 | 96 | .407 | 28.0 | 45-36 | 21-60 | 5-5 | l4
+ | d-backs | 64 | 98 | .395 | 30.0 | 33-48 | 31-50 | 2-8 | l1
+ | = | = | = | = | = | = | = | = | =
+ | _n.l. central_ | w | l | pct | gb | home | away | l10 | strk
+ | cardinals | 90 | 72 | .556 | - | 51-30 | 39-42 | 6-4 | w1
+ | pirates | 88 | 74 | .543 | 2.0 | 51-30 | 37-44 | 6-4 | l2
+ | brewers | 82 | 80 | .506 | 8.0 | 42-39 | 40-41 | 3-7 | l1
+ | reds | 76 | 86 | .469 | 14.0 | 44-37 | 32-49 | 5-5 | w2
+ | cubs | 73 | 89 | .451 | 17.0 | 41-40 | 32-49 | 5-5 | w1
+ | = | = | = | = | = | = | = | = | =
+ | _n.l. east_ | w | l | pct | gb | home | away | l10 | strk
+ | nationals | 96 | 66 | .593 | - | 51-30 | 45-36 | 8-2 | w2
+ | mets | 79 | 83 | .488 | 17.0 | 40-41 | 39-42 | 6-4 | w2
+ | braves | 79 | 83 | .488 | 17.0 | 42-39 | 37-44 | 3-7 | w2
+ | marlins | 77 | 85 | .475 | 19.0 | 42-39 | 35-46 | 3-7 | l2
+ | phillies | 73 | 89 | .451 | 23.0 | 37-44 | 36-45 | 3-7 | l2
+ | = | = | = | = | = | = | = | = | =
+
+ | _american_ _league_
+
+ | _a.l. west_ | w | l | pct | gb | home | away | l10 | strk
+ | angels | 98 | 64 | .605 | - | 52-29 | 46-35 | 3-7 | l3
+ | athletics | 88 | 74 | .543 | 10.0 | 48-33 | 40-41 | 5-5 | w1
+ | mariners | 87 | 75 | .537 | 11.0 | 41-40 | 46-35 | 5-5 | w4
+ | astros | 70 | 92 | .432 | 28.0 | 38-43 | 32-49 | 3-7 | l2
+ | rangers | 67 | 95 | .414 | 31.0 | 33-48 | 34-47 | 7-3 | l1
+ | = | = | = | = | = | = | = | = | =
+ | _a,l. central_ | w | l | pct | gb | home | away | l10 | strk
+ | tigers | 90 | 72 | .556 | - | 45-36 | 45-36 | 6-4 | w1
+ | royals | 89 | 73 | .549 | 1.0 | 42-39 | 47-34 | 6-4 | w1
+ | indians | 85 | 77 | .525 | 5.0 | 48-33 | 37-44 | 6-4 | w1
+ | white sox | 73 | 89 | .451 | 17.0 | 40-41 | 33-48 | 4-6 | l1
+ | twins | 70 | 92 | .432 | 20.0 | 35-46 | 35-46 | 5-5 | l1
+ | = | = | = | = | = | = | = | = | =
+ | _a.l. east_ | w | l | pct | gb | home | away | l10 | strk
+ | orioles | 96 | 66 | .593 | - | 50-31 | 46-35 | 4-6 | w1
+ | yankees | 84 | 78 | .519 | 12.0 | 43-38 | 41-40 | 6-4 | w1
+ | blue jays | 83 | 79 | .512 | 13.0 | 46-35 | 37-44 | 6-4 | l1
+ | rays | 77 | 85 | .475 | 19.0 | 36-45 | 41-40 | 3-7 | l1
+ | red sox | 71 | 91 | .438 | 25.0 | 34-47 | 37-44 | 5-5 | l1
+
+
+
+
+
+ ## chapter 18 -- footnotes
+
+
+let's look at how we do footnotes in z.m.l.
+
+because we need to be able to do footnotes.[1]
+
+the "referent" is the pointer that connects the
+text in the body of the document to its footnote.
+use square-brackets to surround the referent,
+and place it at the end of a word,[2] without
+any whitespace to its left. however, there must
+be no whitespace inside the referent.
+
+the referent must have whitespace to its right,
+either a space or a line-break.[3]
+
+you can use numbers[4] as footnote referents,
+which is the common practice in printed-books.
+
+but you can also use letters if you want to.[five]
+
+it can even be a mixture of letters and numbers.[six6]
+but remember that there must be no spaces inside.
+
+
+
+
+
+ ## chapter 19 -- definitions
+
+
+sometimes you'll want to do definitions.
+
+z.m.l. lets you do that, with the ";" tag.
+
+ ; irony:
+
+ ; the expression of one's meaning
+by using language that normally
+signifies the opposite, typically
+for humorous or emphatic effect.
+
+ ; a state of affairs or an event
+that seems deliberately contrary
+to what one expects and is
+often amusing as a result.
+
+ ; a literary technique,
+originally used in Greek tragedy,
+by which the full significance of
+a character's words or actions
+are clear to the audience or reader
+although unknown to the character.
+
+
+ ; sarcasm:
+
+ ; the use of irony to mock or convey contempt.
+
+
+
+
+
+ ## chapter 20 -- horizontal rules
+
+
+we need to be able to do horizontal rules.
+
+ ******
+
+six asterisks will do the trick. just like that.
+
+
+
+
+
+ ## chapter 21 -- pagebreaks
+
+
+we need to be able to do pagebreaks.
+
+ *********
+
+nine asterisks will do the trick. just like that.
+
+
+
+
+
+ ## chapter 22 -- linebreaks
+
+
+we need to be able to do linebreaks too!
+
+putting a space in column 1
+ of a continuation line in a paragraph
+ will force a linebreak before that line.
+ bingo! that's how easy love can be.
+
+ .
+ jane q. citizen
+ 27 yale street
+ kittyhawk, south carolina
+
+of course, you can use the formatting
+options to accomplish the same end,
+or something roughly equivalent
+
+  jane q. citizen
+  27 yale street
+  kittyhawk, south carolina
+
+   jane q. citizen
+   27 yale street
+   kittyhawk, south carolina
+
+    jane q. citizen
+    27 yale street
+    kittyhawk, south carolina
+
+
+
+
+
+ ## chapter 23 -- play formatting
+
+
+you need to be able to format plays.
+and interviews.
+
+q: how do you get automatic formatting
+for an interview?
+
+a: start the chunk with a label (which
+cannot contain a colon or a space)
+followed by a colon-space combo,
+and the label will be shown in bold.
+
+q: does this mean any chunk that starts
+with a word that is followed by a colon
+will have that first word rendered in bold?
+
+yes: it does. so if that's not what you want,
+you're going to have to rewrite that chunk,
+so as not to fire the false alarm. that's life.
+
+hark: the herald angels sing!
+
+beware: the jabberwock, my son!
+
+behold: the beauty!
+
+warning: that's life!
+
+
+
+
+
+ ## chapter 24 -- audio
+
+
+turn down your volume, because this clip
+can play very loud on some systems.
+
+ http://zenmagiclove.com/simple/macstartup.mp3
+
+
+
+
+
+ ## chapter 25 -- video
+
+
+now let's try some video...
+
+turn down your volume before clicking this video
+to play it, just in case it's too loud for you.
+
+left out the video to see if it was slowing stuff down.
+
+
+
+
+
+ ## chapter 26 -- colophon
+
+
+every serious document needs a colophon!
+
+
+
+
+
+ ## chapter 27 -- inline html
+
+
+inline html is not permitted!
+
+the "lessthanwesswanlessthan" character is automatically converted
+into its harmless ampersand-lt; lookalike. ha!
+
+and that's all she wrote.
+
+if you must inject .html, go back to markdown.
+
+we're aiming not just at the web, but also at
+various places where the bloat of a browser
+might not be a welcome addition. besides,
+with light-markup, we're deprecating .html.
+(and yes, i'm deadly serious when i say that.)
+
+
+
+
+
+ ## chapter 28 -- escaping
+
+
+there is no need to "escape" anything in z.m.l.
+
+because face it, that's just a pain in the ass.
+
+
+
+
+
+ ## chapter 29 -- history of z.m.l.
+
+
+this is the story behind the history of z.m.l.
+
+z.m.l. -- that's "zen markup language" --
+grew out of a study of the plain-text books
+composing the project gutenberg corpus.
+
+ http://gutenberg.org
+
+as you might know, project gutenberg was
+founded by michael hart, and it was the
+original "cyber-library" -- digital books online.
+
+to future-proof the e-books, hart insisted
+that they be offered in a plain-text format.
+
+this approach had its benefits and its costs,
+one of the biggest costs being that e-texts
+without any styling looked exceedingly ugly.
+
+so i set out to see if i could ascertain the
+underlying structure of an e-text, on the fly,
+and then use that information to format it,
+so that it would look much more beautiful,
+and -- as a bonus -- work much better too.
+
+it ended up that it wasn't all that hard to do,
+except for the fact that people did all kinds of
+weird crap when they created these e-texts.
+
+for instance, some people used underscores
+to indicate italics, and others used asterisks,
+and others used or-bars, and still others would
+just put an italicized word or phrase in all-caps.
+
+and some people would put 4 blank lines before
+a header, which is what they're supposed to do,
+but others would put 5 blank lines, or 6, or 3,
+or just 1, and most would _not_ be consistent,
+not even within a single book. i found myself
+doing lots of lots and lots of coding to program
+around all these inconsistencies of carelessness,
+after the initial coding -- as per "the rules" --
+had long been finished. this made me realize
+that as long as people just followed the rules,
+the rules themselves could be extremely simple,
+and thus coding the converter would be easy too.
+
+and that was the birth of "zen markup language".
+
+
+
+
+
+ ## chapter 30 -- end-notes
+
+
+[1] the footnotes are collected at the end.
+
+[2] this is the second footnote. you will notice
+that when you click this link it takes you back
+_not_ to the line that contains the referent, but
+rather to the _beginning_ of the paragraph that
+contains it, because that helps give you context.
+
+this paragraph is a continuation of the footnote.
+because of that,
+you'll notice that
+it's retained
+the indentation preceding it.
+
+this paragraph is another continuation.
+
+
+if you want to return to the margin, just place
+_2_ blank lines above a paragraph, like this one.
+
+[3] this is the third footnote.
+
+[4] this is the 4th footnote.
+
+[five] this is the fifth. it shows an example
+of a word being used as a footnote-referent.
+
+[six6] this is an example of a footnote-referent
+that is a combination of letters and numbers.
+
+ http://zenmagiclove.com/simple/rapt.gif
+
+
+
+
+
+ ## chapter 31 -- meta-data
+
+
+here is the meta-data:
+
+ o title = z.m.l. how-to
+ o author = bowerbird intelligentleman
+ o purpose = explain z.m.l. basics
+ o markup = zen markup language (.zml)
+ o isbn = urn:isbn:0000000000000
+ o publisher = jaguar(ps)
+ o subject = zen markup language, a.k.a. z.m.l.
+ o rights = copyright 2014 -- all rights reserved
+ o ice-cream = new york super fudge chunk!
+ o pie = banana cream
