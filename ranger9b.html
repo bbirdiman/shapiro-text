@@ -1,0 +1,104 @@
+<!doctype html><html lang="en-us"><head><meta http-equiv=content-type content="text/html;charset=utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+
+
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+
+
+
+
+
+<script>
+var gzzz=0
+</script>
+
+
+  <title>ranger</title>
+
+
+
+
+</head>
+<body style=margin-left:25px onload=dochange()>
+
+
+<script>
+function dochange(){
+gzzz++
+var valval = $("#slider-8").val()
+valval=valval+""
+$("#reporter").html("<h2>"+gzzz+" -- "+valval+"</h2>")
+}</script>
+
+
+<script>
+function dochange99(){
+//return
+gzzz++
+var valval = "???"+$("#ranger99").val()
+valval=valval+"=ranger99 and... "+$("#slider-8").val()
+valval=valval+"=slider-8"
+$("#reporter").html("<h2>"+gzzz+" -- "+valval+"</h2>")
+}</script>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id=reporter>reporter</div>
+<br>
+<hr>
+<br>
+<br>
+<br>
+
+
+
+<form>
+<div class="ui-field-contain">
+<label for="slider-8">slider8</label>
+<input type="range" name="slider-8" id="slider-8" data-mini="false" min="1" max="100" value="50" onkeydown=okdinput(event) onchange=dochange()>
+</div>
+</form>
+
+
+<script>
+function okdinput(e){
+
+var kp=e.which || e.keyCode
+if (kp == 13){document.title="13 is...";e.preventDefault();$("#slider-8").blur();return;}
+
+}</script>
+
+
+
+
+
+<form>
+<div class="ui-field-contain">
+<label for="ranger99">ranger99</label>
+<input type="range" id=ranger99 name=ranger99  onchange=dochange99() />
+</div>
+</form>
+
+
+
+
+</body>
+</html>
